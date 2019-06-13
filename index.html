@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page - Snake</title>
+
+    <style media="screen">
+
+      #heading {
+        font-family: tahoma, arial;
+        font-size: 100px;
+        color:black;
+        opacity: 0.4;
+
+
+
+
+
+
+      }
+
+      #boxText {
+        font-family: tahoma, arial;
+        font-size:35px;
+        color:black;
+        opacity:0.6;
+
+
+
+      }
+
+      html {
+        background: url(spbg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+
+
+
+
+      }
+
+#startButton {
+
+                background-color: green;
+                border: none;
+                color: white;
+                padding: 16px 23px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+              }
+
+              #startButton:hover {opacity: 1}
+
+
+
+
+      #grid-container {
+     display:grid;
+     grid-template-columns: auto auto auto;
+     background-color: #473f42;
+     padding: 2px;
+     height:225px;
+     width:675px;
+     border: none;
+     position: relative;
+
+   }
+
+
+   .flip-card {
+     background-color: transparent;
+     width: 225px;
+     height: 225px;
+     perspective: 1000px;
+   }
+
+   .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   }
+
+   .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+   }
+
+   .flip-card-front, .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+   }
+
+   .flip-card-front {
+    background-color: #9cb804;
+     color: black;
+     z-index: 2;
+   }
+
+   .flip-card-back {
+     background-color: #9cb804;
+     color: white;
+     transform: rotateY(180deg);
+     z-index: 1;
+   }
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+<center>
+    <h1 id ='heading'>SNAKE LAKE</h1>
+</center>
+    <br><br><br><br><br>
+
+<center>
+	<div id ="grid-container">
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+  		<h1 id ="boxText">ORIGINAL</h1>
+  	</div>
+  <div class="flip-card-back">
+        <p>This is the original version of snake. You control a snake and have to eat food to grow. Grow as big as you can but remember to not hit yourself or the borders as you will lose</p>
+
+
+        <button type="button" id = 'startButton' onclick = 'og()'>START</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  	<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+  		<h1 id ="boxText">POISON</h1>
+  	</div>
+  <div class="flip-card-back">
+      <p>It is the same as the original snake with an added twist. Sometimes a posion pellet will appear which looks just like the food. You will lose if you eat it.</p>
+      <button type="button" id = 'startButton' onclick = 'ov()'>START</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <h1 id ="boxText">OUR VERSION</h1>
+  </div>
+<div class="flip-card-back">
+    <p>This is our version of snake. You have to reach the food and eat it without hitting any of the walls. If you hit the walls you have to restart</p>
+    <button type="button" id = 'startButton' onclick = 'op()'>START</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+function og() {
+window.location = "snake.html"
+
+
+}
+
+function ov() {
+window.location = "whalesnake.html"
+
+
+}
+
+function op() {
+window.location = 'pzselection.html'
+
+
+
+}
+</script>
+
+
+
+
+  </body>
+</html>

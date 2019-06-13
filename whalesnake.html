@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+
+          html {
+            background-color:#006994;
+
+
+
+          }
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+
+            #btn {
+              background-color: black;
+              border: none;
+              color: white;
+              padding: 16px 23px;
+              text-align: center;
+              font-size: 16px;
+              margin: 4px 2px;
+              opacity: 0.6;
+              transition: 0.3s;
+              display: inline-block;
+              text-decoration: none;
+              cursor: pointer;
+
+
+
+
+
+            }
+
+
+            #btn:hover{opacity:1;}
+
+        </style>
+    </head>
+
+  <body>
+    <div class= 'game'>
+    <div id = 'home'>
+
+    <canvas id="canvas" width="608" height="608" img src = 'bg.jpg'></canvas>
+  </div>
+
+    <center>
+      <br>
+   <button id='btn'>START</button>
+ </center>
+ </div>
+
+    <script src="whalesnake.js"></script>
+
+  </body>
+</html>

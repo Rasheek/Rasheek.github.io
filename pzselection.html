@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle Snake - Levels</title>
+
+    <style media="screen">
+
+    html {
+      background: url(spbg.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+
+
+
+
+
+    }
+      #button {
+
+          background-color: black;
+          border: none;
+          color: white;
+          padding: 16px 23px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.6;
+          transition: 0.3s;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        #button:hover {opacity: 1}
+
+        #button1 {
+
+            background-color: darkgreen;
+            border: none;
+            color: white;
+            padding: 16px 23px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          #button1:hover {opacity: 1}
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+
+
+  <body>
+
+<center>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <button type="button" id ="button" onclick = "level1()">LEVEL 1</button>
+    <button type="button" id ="button" onclick = "level2()">LEVEL 2</button>
+    <button type="button" id ="button" onclick = "level3()">LEVEL 3</button>
+</center>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <button type="button" id ="button1" onclick = "goBack()">RETURN</button>
+
+
+  <script type="text/javascript">
+
+    function level1() {
+      window.location = "puzzleSnake.html"
+
+
+
+    }
+
+    function level2() {
+      window.location = "pzlv2.html"
+
+
+
+    }
+
+
+    function level3() {
+      window.location = "pzlv3.html"
+
+
+
+
+    }
+
+    function goBack() {
+      window.location = "index.html"
+
+
+
+    }
+
+  </script>
+  </body>
+</html>
